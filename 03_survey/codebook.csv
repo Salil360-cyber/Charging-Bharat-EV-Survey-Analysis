@@ -1,0 +1,30 @@
+code,question,type,answer_codes,research_question
+S1,Age,Single choice,Under 18 / 18–24 / 25–34 / 35–44 / 45+,Screener
+S2,City/town,Single choice,Nagpur / Gondia / Bhandara / Chandrapur / Wardha / Other Vidarbha / Outside Vidarbha,Screener
+S3,Own a two-wheeler,Single choice,"Yes, petrol / Yes, electric / No",RQ2
+S4,Plan to buy a two-wheeler in 24 months,Single choice,Yes / Maybe / No,RQ2
+A1,Brands heard of,Multi choice (; separated),Brand A–F,RQ5
+A2,Brands would consider,Multi choice (; separated),Brand A–F,RQ5
+A3,Brand would choose today,Single choice,Brand A–F / I would buy petrol,RQ5
+B1,Battery range is enough for my daily travel,Likert 1–5,1 Strongly disagree … 5 Strongly agree,RQ4
+B2,Charging points are easily available in my town,Likert 1–5,1 Strongly disagree … 5 Strongly agree,RQ4
+B3,EV service centres are available near me,Likert 1–5,1 Strongly disagree … 5 Strongly agree,RQ4
+B4,I worry about EV battery safety (fire risk),Likert 1–5,1 Strongly disagree … 5 Strongly agree,RQ4
+B5,Lower running cost is a major reason to consider an EV,Likert 1–5,1 Strongly disagree … 5 Strongly agree,RQ4
+B6,I worry about the resale value of an EV,Likert 1–5,1 Strongly disagree … 5 Strongly agree,RQ4
+B7,New technology excites me,Likert 1–5,1 Strongly disagree … 5 Strongly agree,RQ4
+B8,A trusted brand matters more than a lower price,Likert 1–5,1 Strongly disagree … 5 Strongly agree,RQ4
+B9,Attention check: select Agree,Likert 1–5,1 Strongly disagree … 5 Strongly agree,QC
+C1,Daily km ridden,Single choice,<10 / 10–25 / 25–50 / 50+,RQ2
+C2,Can charge at home,Single choice,Yes / No / Not sure,RQ2
+D1,Too cheap price,Number (₹),₹,RQ3
+D2,Bargain price,Number (₹),₹,RQ3
+D3,Getting expensive price,Number (₹),₹,RQ3
+D4,Too expensive price,Number (₹),₹,RQ3
+E1,Likely to buy EV 2W in 12 months,Single choice,5 Definitely will … 1 Definitely not,RQ2
+E2,Payment method,Single choice,Full payment / EMI / Not sure,RQ3
+F1,Main reason NOT to buy,Open text,Coded into 6 themes,RQ4
+F2,One thing that would make you buy,Open text,—,RQ4
+G1,Gender,Single choice,Male / Female / Prefer not to say,Profile
+G2,Occupation,Single choice,Student / Salaried / Self-employed / Homemaker / Other,Profile
+G3,Monthly household income,Single choice,<₹25k / ₹25–50k / ₹50k–1L / ₹1L+ / Prefer not to say,Profile

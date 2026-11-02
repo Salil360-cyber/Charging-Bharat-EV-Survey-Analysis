@@ -47,6 +47,33 @@ What it means for a brand entering these towns: the blocker is after-sales and c
 
 ![Segments](06_analysis/outputs/charts/05_segments.png)
 
+## Questionnaire
+
+29 items in 8 blocks (screener, brand funnel, 8 attitude statements + attention check, usage, Van Westendorp pricing, intent, open-ended barriers, profile). Full text: [`03_survey/questionnaire.md`](03_survey/questionnaire.md); codes and answer options: [`03_survey/codebook.csv`](03_survey/codebook.csv).
+
+## What separates the segments
+
+Average agreement (1 = strongly disagree, 5 = strongly agree) with each attitude statement:
+
+| Statement | Infrastructure Skeptic | Tech Early Adopter | Budget Commuter |
+| --- | --- | --- | --- |
+| B1 Range is enough for my daily travel | 2.33 | **3.73** | 2.95 |
+| B2 Charging points are easily available | 1.68 | 2.53 | 2.52 |
+| B3 Service centres are available near me | 1.60 | 2.82 | 2.40 |
+| B4 I worry about battery safety (fire risk) | **4.17** | 2.36 | 3.28 |
+| B5 Lower running cost is a major reason | 3.35 | 3.76 | **4.53** |
+| B6 I worry about resale value | **4.19** | 2.63 | 3.92 |
+| B7 New technology excites me | 2.55 | **4.31** | 2.89 |
+| B8 A trusted brand matters more than a lower price | **4.02** | 2.92 | 3.24 |
+| Share of respondents | 33% | 23% | 44% |
+| Likely to buy in 12 months | 14% | 93% | 48% |
+
+- **Tech Early Adopters** like new technology and believe the range is enough: they are ready now.
+- **Budget Commuters** are drawn by low running cost but worry about resale: an EMI offer and a buy-back or resale guarantee speak to them.
+- **Infrastructure Skeptics** worry about battery safety and resale, trust established brands, and see no charging or service nearby: they need proof (safety certification, local service) before they consider an EV.
+
+**Drivers of intent** (Spearman ρ with E1, all p < 0.001): battery-safety worry is the strongest negative link (ρ = −0.54), then excitement about new technology (+0.48) and believing the range is enough (+0.46); resale worry (−0.36) and preferring a trusted brand (−0.27) also pull intent down.
+
 ## Quality control
 
 [`qc.py`](qc.py) flags every response before any analysis:
@@ -71,7 +98,7 @@ What it means for a brand entering these towns: the blocker is after-sales and c
 | K-means on the 8 attitude statements (standardised) | Which attitude groups exist? k = 2–6 compared with silhouette scores. | `analysis.py` B |
 | Van Westendorp price sensitivity | Which price range is acceptable? Uses the four price questions D1–D4. | `analysis.py` C |
 | Brand funnel | Aware → would consider → would buy first, per brand | `analysis.py` D |
-| Spearman correlation | Which attitudes move with purchase intent? Battery-safety worry has the strongest (negative) link, ρ = −0.54. | `analysis.py` E |
+| Spearman correlation | Which attitudes move with purchase intent? | `analysis.py` E |
 | Keyword coding | Groups open-ended barrier answers (English and Hinglish) into 6 themes | `summary.py` |
 
 ## Limitations
@@ -80,7 +107,7 @@ What it means for a brand entering these towns: the blocker is after-sales and c
 - **Segments overlap.** Silhouette scores were low for every k (0.11–0.18) and slightly higher at k = 2. Three segments were kept because they are distinct and usable for marketing; with real data this choice should be tested again.
 - **Open-ended coding** uses keywords. It works on these answers, but real answers are messier and would need manual review of a sample.
 - **Sample size.** Some subgroups are small (e.g. "Other" occupation, n = 21), so their percentages are less reliable.
-- The questionnaire document is not yet included in this repository.
+- The survey part of the original plan is built here; the secondary-data (VAHAN registrations), review-mining and market-sizing modules are not part of this repository.
 
 ## How to run
 
