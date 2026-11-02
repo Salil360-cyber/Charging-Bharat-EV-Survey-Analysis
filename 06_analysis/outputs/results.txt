@@ -1,0 +1,10 @@
+Clean base: 380 | purchase intent (top-2-box, next 12 months): 47.4%
+Age (chi-square p=0.000): 18–24 70% (n=105); 25–34 51% (n=132); 35–44 35% (n=82); 45+ 18% (n=61)
+Home charging (chi-square p=0.000): No 37% (n=110); Not sure 26% (n=34); Yes 55% (n=236)
+Town (chi-square p=0.457): Bhandara 53% (n=38); Chandrapur 51% (n=39); Gondia 52% (n=60); Nagpur 42% (n=168); Other Vidarbha 48% (n=42); Wardha 58% (n=33)
+Occupation (chi-square p=0.000): Homemaker 42% (n=33); Other 62% (n=21); Salaried 44% (n=172); Self-employed 39% (n=106); Student 77% (n=48)
+Nagpur vs smaller towns intent: 41.7% vs 51.9% (chi-square p=0.060, not significant)
+Agree charging points are available: 11.3% | service centre nearby: 10.8% | running cost is a major reason: 70.0% | worry about battery safety: 46.1%
+Main barrier (open-ended, keyword-coded): Service 31%; Charging 27%; Price 14%; Resale / battery cost 11%; Safety 9%; Range 7%
+Segments (K-means, k=3): Infrastructure Skeptic 124 (33%), intent 14%; Tech Early Adopter 89 (23%), intent 93%; Budget Commuter 167 (44%), intent 48%
+EMI preferred by 54.7%
